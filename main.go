@@ -21,15 +21,6 @@ var (
 
 const VERSION = "0.0.1"
 
-// {
-//   "entries": [
-//     {"url":"s3://mybucket-alpha/2013-10-04-custdata", "mandatory":true},
-//     {"url":"s3://mybucket-alpha/2013-10-05-custdata", "mandatory":true},
-//     {"url":"s3://mybucket-beta/2013-10-04-custdata", "mandatory":true},
-//     {"url":"s3://mybucket-beta/2013-10-05-custdata", "mandatory":true}
-//   ]
-// }
-
 type ManifestEntry struct {
 	Url       string `json:"url"`
 	Mandatory bool   `json:"mandatory"`
