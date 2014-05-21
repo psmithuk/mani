@@ -7,8 +7,13 @@ Create AWS Redshift manifest files from a file list.
 I wanted to a simple command line application which I could embed into an ETL
 workflow without the need for any external dependencies.
 
-## Usage
+## Installation
 
+This will build with the standard [Go tools](http://golang.org/). No further dependancies required unless you want to build cross platform binaries, in which case the `make dist` action will use [gox](https://github.com/mitchellh/gox) for a few common target environments.
+
+You can download binaries from the [github release pages](https://github.com/psmithuk/mani/releases/tag/v0.0.1)
+
+## Usage
 
 ```bash
 usage: mani [flags]
@@ -34,7 +39,6 @@ mani -i=files.txt -o=manifest.json -p="s3://mybucket-alpha/"
 ```
 
 the file `manifest.json` with the following json will be created:
-
 
 ```json
 {
