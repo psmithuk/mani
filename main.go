@@ -50,13 +50,10 @@ func (m *Manifest) String() string {
 }
 
 func init() {
-
 	flag.BoolVar(&showversion, "version", false, "print version string")
-
 	flag.StringVar(&inputFilename, "i", "", "input filename (stdout if none provided)")
 	flag.StringVar(&outputFilename, "o", "", "output filename (stdout if none provided)")
 	flag.StringVar(&prefix, "p", "", "s3 bucketname or prefix")
-
 }
 
 func main() {
